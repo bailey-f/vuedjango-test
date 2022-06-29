@@ -4,7 +4,7 @@
       <div class="container mw-0 px-3">
 
         <a class="navbar-brand" href="#">
-        <img src="../assets/logo.png" width="" height="27" class="d-inline-block align-top" alt="" loading="lazy">
+        <img src="../assets/logo.jpg" width="" height="30" class="d-inline-block align-top rounded" alt="" loading="lazy">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -13,11 +13,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-            <router-link :to = "{ name:'posts' }" exact>Posts</router-link>
+            <router-link :to = "{ name:'projects' }" exact>Projects</router-link>
+            </li>
+            <li class="nav-item mw-0 px-3">
+            <router-link :to = "{ name:'albums' }" exact>Albums</router-link>
             </li>
           </ul>
         </div>
-
       </div>
     </nav>
   </div>

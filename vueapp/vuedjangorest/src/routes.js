@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Posts from './views/Posts.vue'
+import Projects from './views/Projects.vue'
+import Project from './views/Project.vue'
+import Albums from './views/Albums.vue'
+import Album from './views/Album.vue'
 
 Vue.use(VueRouter)
 
@@ -12,9 +15,23 @@ export default new VueRouter({
     routes: [
         {
             path: '/',
-            name: 'posts',
-            component: Posts,
+            name: 'projects',
+            component: Projects,
         },
-        
+        {
+            path: '/',
+            name: 'albums',
+            component: Albums,
+        },
+        {
+            path: '/projects/:projectslug',
+            name: 'project',
+            component: Project,
+        },
+        {
+            path: '/albums/:albumslug',
+            name: 'album',
+            component: Album,
+        }
     ]
 })
